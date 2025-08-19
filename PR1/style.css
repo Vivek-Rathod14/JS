@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEAE3;
+    font-family: 'Neue Haas Grotesk Display Pro';
+
+}
+
+.container {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --white: #fff;
+    --fs-14: 14px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-60: 60px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-none {
+    display: none;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background: #0e0e12;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.tip {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tip-card {
+    background: #1b1b23;
+    border-radius: 28px;
+    width: 400px;
+    overflow: hidden;
+    box-shadow:
+        0 15px 25px rgba(72, 59, 171, 0.5),
+        0 5px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-8px);
+}
+.tip-header {
+    text-align: center;
+    padding: 35px 25px;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    box-shadow: 0 6px 20px rgba(142, 45, 226, 0.7);
+    user-select: none;
+}
+
+.tip-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #fff;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tip-header p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    opacity: 0.9;
+    color: #eee;
+}
+.tip-body {
+    padding: 25px 30px;
+}
+.tip-body label {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 0.85;
+    color: #bbb;
+    font-weight: 600;
+    user-select: none;
+}
+
+.tip-body input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 8px;
+    border-radius: 16px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    background: #2f2f45;
+    box-shadow:
+        inset 0 0 10px rgba(255, 255, 255, 0.05),
+        0 0 6px rgba(142, 45, 226, 0.3);
+    outline-offset: 2px;
+    outline-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.tip-body input::placeholder {
+    color: #888bb0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.tip-body input:focus {
+    outline-color: #8e2de2;
+    box-shadow:
+        0 0 12px #8e2de2,
+        inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.calculate-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(142, 45, 226, 0.75);
+    user-select: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.calculate-btn:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 14px 28px rgba(142, 45, 226, 0.9);
+}
+
+.tip-body span {
+    display: block;
+    background: #2f2f45;
+    padding: 16px 20px;
+    border-radius: 18px;
+    margin-top: 22px;
+    font-size: 17px;
+    color: #ddd;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    user-select: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tip-body span:hover {
+    background: #3a3a56;
+    transform: translateY(-4px);
+}

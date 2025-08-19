@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PR1</title>
+</head>
+
+<body style="background-color: white; display: flex;">
+
+    <section class="tip">
+        <div class="tip-card">
+            <div class="tip-header">
+                <h2>Split Your Bill</h2>
+                <p>Need to divide amount?</p>
+            </div>
+            <div class="tip-body">
+                <label>Bill Amount</label>
+                <input type="number" id="bill" placeholder="$0.00">
+
+                <label>Tip Percentage</label>
+                <input type="number" id="tip" placeholder="Enter tip %">
+
+                <label>Number Of Pepole</label>
+                <input type="number" id="people" placeholder="Enter Number of people">
+
+                <button class="calculate-btn" onclick=" return calculateTip()">Calculate Tip</button>
+            </div>
+            <div class="tip-body">
+                <span id="s3">Tip Per Person</span><br>
+                <span id="s2">Total Per Person</span><br>
+                <span id="s1">Total Bill</span><br>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
