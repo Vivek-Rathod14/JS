@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FOOD</title>
+</head>
+
+<body style="background-color: #1A1A2E; display: flex;">
+
+    <select id="choice" onchange="return culc()">
+        <option value="0">Menu</option>
+
+        <option value="1">1.Burger</option>
+        <option value="2">2.Pizaa</option>
+        <option value="3">3.Frankie</option>
+        <option value="4">4.Alupuri</option>
+    </select>
+    <input type="submit" value="Submit" onclick="return totalbill()">
+
+    <div id="output"></div>
+    <h5 id="burgerAll"></h5>
+    <h5 id="pizaaAll"></h5>
+    <h5 id="FrankieAll"></h5>
+    <h5 id="AlupuriAll"></h5>
+    <h6 id="totalbill"></h6>
+
+    <script>
+        function culc() {
+
+            var choice = document.getElementById("choice").value;
+
+            if (choice === "1") {
+                var Burger = `
+            <h2>🍔 Burger Menu</h2>
+            <p>Price: ₹120</p>
+            <input type="number"/ id="burger1">  
+            <button onclick="return burger()">Submit</button>`;
+                document.getElementById("output").innerHTML = Burger;
+            }
+            else if (choice === "2") {
+                var Pizaa = `
+           <h2>🍕 Pizza Menu</h2>  
+            <p>Price: ₹150</p>
+            <input type="number"/ id="pizaa1">  
+           <button onclick="return pizaa()">Submit</button>`;
+                document.getElementById("output").innerHTML = Pizaa;
+            }
+            else if (choice === "3") {
+                var Frankie = `
+           <h2>🌯 Frankie Menu</h2>  
+            <p>Price: ₹90</p>
+              <input type="number"/ id="Frankie1">  
+           <button onclick="return Frankie()">Submit</button>`;
+                document.getElementById("output").innerHTML = Frankie;
+            }
+            else if (choice === "4") {
+                var Alupuri = `
+          <h2>🥔 Alupuri Menu</h2> 
+            <p>Price: ₹60</p>
+              <input type="number"/ id="Alupuri1">  
+           <button onclick="return Alupuri()">Submit</button>`;
+                document.getElementById("output").innerHTML = Alupuri;
+            }
+        }
+        var burgerprice = 0, pizaaprice = 0, Frankieprice = 0, Alupuriprice = 0;
+        function burger() {
+            var burger1 = document.getElementById("burger1").value;
+            if (burger1 > 0) {
+                burgerprice = 120 * burger1;
+                document.getElementById("burgerAll").innerHTML = `Total Burger Price: ₹${burgerprice}`;
+            }
+            else {
+                document.getElementById("burgerAll").innerHTML = "Please enter a valid quantity";
+                burgerprice = 0;
+            }
+
+        }
+        function pizaa() {
+            var pizaa1 = document.getElementById("pizaa1").value;
+            if (pizaa1 > 0) {
+                pizaaprice = 150 * pizaa1;
+                document.getElementById("pizaaAll").innerHTML = `Total Pizaa Price: ₹${pizaaprice}`;
+            }
+            else {
+                document.getElementById("pizaaAll").innerHTML = "Please enter a valid quantity";
+                pizaaprice = 0;
+            }
+        }
+        function Frankie() {
+            var Frankie1 = document.getElementById("Frankie1").value;
+            if (Frankie1 > 0) {
+                Frankieprice = 90 * Frankie1;
+                document.getElementById("FrankieAll").innerHTML = `Total Frankie Price: ₹${Frankieprice}`;
+            }
+            else {
+                document.getElementById("FrankieAll").innerHTML = "Please enter a valid quantity";
+                Frankieprice = 0;
+            }
+        }
+        function Alupuri() {
+            var Alupuri1 = document.getElementById("Alupuri1").value;
+            if (Alupuri1 > 0) {
+                Alupuriprice = 60 * Alupuri1;
+                document.getElementById("AlupuriAll").innerHTML = `Total Alupuri Price: ₹${Alupuriprice}`;
+
+            }
+            else {
+                document.getElementById("AlupuriAll").innerHTML = "Please enter a valid quantity";
+                Alupuriprice = 0;
+
+            }
+        }
+        function totalbill() {
+            var total = burgerprice + pizaaprice + Frankieprice + Alupuriprice;
+            document.getElementById("totalbill").innerHTML = `Total Bill: ₹${total}`;
+        }
+    </script>
+
+</body>
+
+</html>
