@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Student Data Form</title>
+</head>
+
+<body style="background-color: #222222 ;display: flex;">
+
+    <div class="main" style="display: flex !important; justify-content: center;">
+        <div class="container">
+            <h1>Student Data Form</h1>
+            <form id="studentForm">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+
+                <label for="eng">English Marks</label>
+                <input type="number" id="eng" min="0" max="100" required>
+
+                <label for="guj">Gujarati Marks</label>
+                <input type="number" id="guj" min="0" max="100" required>
+
+                <label for="maths">Maths Marks</label>
+                <input type="number" id="maths" min="0" max="100" required>
+
+                <label for="sci">Science Marks</label>
+                <input type="number" id="sci" min="0" max="100" required>
+
+                <label for="comp">Computer Marks</label>
+                <input type="number" id="comp" min="0" max="100" required>
+
+
+                <button type="button" id="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h1>Student Data Show</h1>
+            <form id="studentForm">
+                <h1 id="name1">Name : </h1>
+                <h1 id="eng1">English :</h1>
+                <h1 id="guj1">Gujarati :</h1>
+                <h1 id="maths1">Maths :</h1>
+                <h1 id="sci1">Science:</h1>
+                <h1 id="comp1">Computer :</h1>
+                <h1 id="per1">Percentage :</h1>
+                <h1 id="gre1">Percentage :</h1>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
