@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #C9CCD3; ">
+    <div class="salary" >
+        <h1>Salary Calculator</h1>
+        <div class="salary-box">
+            <div class="row">
+                <div class="col-6">
+                    <form class="form-grid">
+                        <div class="form-group">
+                            <label>Age:</label>
+                            <input type="number" id="age" placeholder="Enter your age">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Years of Working:</label>
+                            <input type="number" id="year" placeholder="Years of working">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Job:</label>
+                            <input type="text" id="job" placeholder="Software Engineer">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Hours per Day:</label>
+                            <input type="number" id="hour" placeholder="Hours per day">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Workdays per Week:</label>
+                            <input type="number" id="week" placeholder="Workdays per week">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Net Salary ($):</label>
+                            <input type="number" id="net" placeholder="Net Salary">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Calculation Type:</label>
+                            <select id="type">
+                                <option value="">Select</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="yearly">Yearly</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="button" onclick="calculateSalary()">Create Salary Overview</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-6">
+                    <h4>
+                        On your job as Software Engineer, this is your salary overview:
+                    </h4>
+                    hours per day: <span id="hoursPerDay"></span><br>
+                    daily salary: <span id="dailySalary"></span><br>
+                    monthly salary: <span id="monthlySalary"></span><br>
+                    Yearly Salary: <span id="yearlySalary"></span><br>
+                    total salary: <span id="totalSalary"></span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
