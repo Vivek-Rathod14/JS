@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Weather API</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="overflow-hidden ">
+    <div class="setting absolute z-10 w-10 h-10 rounded-full bg-white/10 backdrop-blur flex items-center justify-center "
+        style="margin-left:20px; margin-top: 20px;">
+        <i class="fa-solid fa-gear text-white text-sm"></i>
+    </div>
+
+    <div id="location" class="absolute z-10  text-4xl font-medium mt-1 text-white "
+        style="right: 45%; top: 10%; font-size: 15px;">
+        Cupertino
+    </div>
+
+    <div class="allWeatherData">
+        <div class="weatherImg absolute  h-screen w-screen overflow-hidden bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#0b0b0b]"
+            id="weatherImg">
+
+            <div class="img-we" style=" padding-top: 180px; padding-left: 600px; width: 100%; height: 100%; ">
+                <img src="img/unnamed.png" alt="" style="width: 500px; opacity: 0;" id="cloud">
+            </div>
+            <!-- <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="./img/rain.mp4" type="video/mp4">
+            </video> -->
+
+        </div>
+
+        <div class="absolute inset-0 flex items-center">
+            <!-- Left offset like image -->
+            <div class="ml-24 -mt-24">
+
+                <div class="flex flex-col text-white">
+                    <h2 id="Temp" class="text-[75px] font-light leading-none mt-2">
+                        22.2°C
+                    </h2>
+
+                    <div id="code" class="text-2xl font-medium opacity-90 mt-1">
+                        Sunny
+                    </div>
+
+                    <div class="flex gap-3 text-lg opacity-80 mt-3">
+                        <div id="h">H:82°</div>
+                        <div id="l">L:55°</div>
+                    </div>
+                    <div class="flex gap-3 text-lg opacity-80 mt-3">
+                        <div><i class="fa-solid fa-fan text-1xl" style="font-size: 12px;"></i> <span class=""
+                                style="font-size: 12px;">Wind</span> <br> <span id="wind">23</span>km/h</div>
+                        <div class="text-white"><i class="fa-solid fa-droplet text-1xl "
+                                style="font-size: 12px;"></i><span style="font-size: 12px;"> Humidity</span><br><span
+                                id="hum">45</span>%</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#0b0b0b] rounded-2xl border-{#477AAE} m-7 my-0   w-[18vw] h-[50vh] absolute top-2/6 -translate-y-1/2  left-0"
+        style="transform: translate(1600px);">
+
+        <!-- Search Box -->
+        <div
+            class="flex items-center gap-2 bg-transparent  rounded-4xl px-3 py-2 mt-5 w-60 mx-auto border-[#ffffff] border-1">
+            <svg class="w-5 h-5 opacity-80 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-4.35-4.35m1.6-5.4a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="city" placeholder="home" autocomplete="off" spellcheck="false" autocorrect="off"
+                autocapitalize="off" inputmode="text" class="w-full bg-transparent text-white placeholder-white/70
+         border-0 outline-none ring-0
+         focus:outline-none focus:ring-0
+         appearance-none" />
+
+
+
+            <span class="text-white/60 cursor-pointer" id="deleteData"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+
+        <!-- Suggested -->
+        <div class="rowData px-5">
+            <div class="mt-4 text-sm uppercase tracking-widest font-bold text-[#b8b8b8]">
+                Suggested
+            </div>
+
+            <!-- List -->
+            <div class="mt-3 space-y-3 text-base">
+                <div class=" py-2 px-4 rounded-2xl">
+                    <div class="font-bold text-white">🏠 Home</div>
+                    <div class="font-bold text-[#d1d5db] text-sm">Park St, San Francisco</div>
+                </div>
+
+                <ul>
+                    <li class="border-t pt-3 font-bold text-[#b8b8b8] cursor-pointer">
+                        Homestead Cupertino, CA, United States
+                    </li>
+                    <li class=" font-bold text-[#b8b8b8] pt-3 cursor-pointer">
+                        Homeland, CA, United States
+                    </li>
+                    <li class=" font-bold text-[#b8b8b8] pt-3 cursor-pointer">
+                        Home, WA, United States
+                    </li>
+                    <li class=" font-bold text-[#b8b8b8] pt-3 cursor-pointer">
+                        Home Gardens, CA, United States
+                    </li>
+                    <li class=" font-bold text-[#b8b8b8] pt-3 cursor-pointer">
+                        Homedale, ID, United States
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="fetch.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
