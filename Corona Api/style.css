@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEAE3;
+    font-family: 'Neue Haas Grotesk Display Pro';
+
+}
+
+.container {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --white: #fff;
+    --fs-14: 14px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-60: 60px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-none {
+    display: none;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background: #181E27;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 35px;
+    background: #181E27;
+    color: #ffffff;
+    margin: 0 !important;
+}
+
+.search-container {
+    position: relative;
+    width: 800px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #2a2a3d;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container input::placeholder {
+    color: #b0b0c0;
+}
+
+.search-container .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #b0b0c0;
+    pointer-events: none;
+}
+
+
+.covid-card {
+  width: 340px;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.header img {
+  width: 32px;
+  height: auto;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 15px;
+}
+
+.recovered strong {
+  color: #4ade80;
+}
+
+.deaths strong {
+  color: #f87171;
+}
+
+#button {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+  .card {
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .today-cases { background-color: #e63946; }
+    .today-deaths { background-color: #6c757d; }
+    .total-tests { background-color: #457b9d; }
+    .affected-countries { background-color: #f4a261; }

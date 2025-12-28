@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Watch Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+</body>
+<header class="header">
+  <h1>Corona Api</h1>
+</header>
+
+<section class="box">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="display: flex; justify-content: space-between; ">
+        <div class="col-4"
+          style=" width:300px; height:150px; padding:18px; border-radius:14px; background:linear-gradient(135deg,#ff4d4d,#c81e1e); box-shadow:0 10px 30px rgba(255,77,77,0.4); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+          <div style="display:flex; align-items:center; gap:8px; ">
+            <i class="fa-solid fa-virus" style="font-size:18px;"></i>
+            <h4 style="margin:0; font-size:15px; font-weight:600;">
+              Total Cases
+            </h4>
+          </div>
+          <h1 id="TotalCase" style=" margin:0; font-size:32px; font-weight:700; letter-spacing:1px;">
+            704753890
+          </h1>
+        </div>
+        <div class="col-4"
+          style=" width:300px; height:150px; padding:18px; border-radius:14px; background: linear-gradient(135deg,  #4ade80, #16a34a); box-shadow: 0 12px 30px rgba(81, 141, 83, 0.35); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+          <div style="display:flex; align-items:center; gap:8px; ">
+            <i class="fa-solid fa-heart"></i>
+            <h4 style="margin:0; font-size:15px; font-weight:600;">
+              Recovered
+            </h4>
+          </div>
+          <h1 id="Recovered" style=" margin:0; font-size:32px; font-weight:700; letter-spacing:1px;">
+            560567666
+          </h1>
+        </div>
+        <div class="col-4"
+          style=" width:300px; height:150px; padding:18px; border-radius:14px; background: linear-gradient(135deg,   #4b5563,  #1f2937 ); box-shadow: 0 12px 30px rgba(84, 68, 68, 0.35); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+          <div style="display:flex; align-items:center; gap:8px; ">
+            <i class="fa-solid fa-skull"></i>
+            <h4 style="margin:0; font-size:15px; font-weight:600;">
+              Total Deaths
+            </h4>
+          </div>
+          <h1 id="TotalDeaths" style=" margin:0; font-size:32px; font-weight:700; letter-spacing:1px;">
+            7010681
+          </h1>
+        </div>
+        <div class="col-4"
+          style=" width:300px; height:150px; padding:18px; border-radius:14px; background: linear-gradient( 135deg,#facc15, #f59e0b ); box-shadow: 0 12px 30px rgba(84, 68, 68, 0.35); display:flex; flex-direction:column;  color:white;justify-content:space-between;  font-family:Arial, sans-serif; margin-right: 20px;">
+          <div style="display:flex; align-items:center; gap:8px; ">
+            <i class="fa-solid fa-virus" style="font-size:18px;"></i>
+            <h4 style="margin:0; font-size:15px; font-weight:600;">
+              Active Cases
+            </h4>
+          </div>
+          <h1 id="ActiveWorld"
+            style=" margin:0; font-size:32px; font-weight:700; letter-spacing:1px; padding-top: 20px;">
+            137175543
+          </h1>
+        </div>
+
+
+      </div>
+      <div class="col-12" style=" display: flex; justify-content:flex-start; flex-direction: column;">
+        <div class="col-8">
+          <div class="searchCon">
+            <div class="search-container" style="display: flex;">
+              <input type="text" placeholder="Search Country..." id="Search">
+              <button id="button">
+                <i class="fas fa-search icon" style="color: #2A2A3D;"></i></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="covid-card">
+            <div class="header" style="background-color: transparent;">
+              <img src="https://flagcdn.com/w40/it.png" alt="Italy" id="img">
+              <h2 id="countryName">Italy</h2>
+            </div>
+
+            <div class="row">
+              <span>Cases:</span>
+              <strong id="case">26723249</strong>
+            </div>
+
+            <div class="row recovered">
+              <span>Recovered:</span>
+              <strong id="recovered">26361218</strong>
+            </div>
+
+            <div class="row deaths">
+              <span>Deaths:</span>
+              <strong id="deaths">196487</strong>
+            </div>
+
+            <div class="row">
+              <span>Active:</span>
+              <strong id="active">165544</strong>
+            </div>
+
+
+
+            <div class="row">
+              <span>Population:</span>
+              <strong id="population">60262770</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="display: flex; justify-content: flex-end; ">
+        <div class="col-6" style="display: flex; justify-content: space-between; ">
+          <div class="col-4"
+            style=" width:200px; height:100px; padding:18px; border-radius:14px; background:linear-gradient(135deg,#ff4d4d,#c81e1e); box-shadow:0 10px 30px rgba(255,77,77,0.4); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+            <div style="display:flex; align-items:center; gap:8px; ">
+              <i class="fa-solid fa-virus" style="font-size:18px;"></i>
+              <h4 style="margin:0; font-size:15px; font-weight:600;">
+                Today Cases
+              </h4>
+            </div>
+            <h1 id="TodayCase" style=" margin:0; font-size:25px; font-weight:700; letter-spacing:1px;">
+              0
+            </h1>
+          </div>
+          <div class="col-4"
+            style=" width:200px; height:100px; padding:18px; border-radius:14px; background: linear-gradient(135deg,  #4ade80, #16a34a); box-shadow: 0 12px 30px rgba(81, 141, 83, 0.35); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+            <div style="display:flex; align-items:center; gap:8px; ">
+              <i class="fa-solid fa-heart"></i>
+              <h4 style="margin:0; font-size:15px; font-weight:600;">
+                Today Recovered
+              </h4>
+            </div>
+            <h1 id="todayRecovered" style=" margin:0; font-size:25px; font-weight:700; letter-spacing:1px;">
+              824
+            </h1>
+          </div>
+          <div class="col-4"
+            style=" width:200px; height:100px; padding:18px; border-radius:14px; background: linear-gradient(135deg,   #4b5563,  #1f2937 ); box-shadow: 0 12px 30px rgba(84, 68, 68, 0.35); display:flex; flex-direction:column; justify-content:space-between; color:white; font-family:Arial, sans-serif; margin-right: 20px;">
+            <div style="display:flex; align-items:center; gap:8px; ">
+              <i class="fa-solid fa-skull"></i>
+              <h4 style="margin:0; font-size:15px; font-weight:600;">
+                Today Deaths
+              </h4>
+            </div>
+            <h1 id="TodayDeaths" style=" margin:0; font-size:25px; font-weight:700; letter-spacing:1px;">
+              0
+            </h1>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+</section>
+
+<script src="importData.js"></script>
+<script src="script.js"></script>
+
+</html>
