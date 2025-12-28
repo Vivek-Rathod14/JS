@@ -158,7 +158,6 @@ body{
   background:#ffffff;
   color:#333;
 }
-/* horizontal scroll */
 #result{
     display:flex;
     gap:20px;
@@ -186,7 +185,6 @@ body{
     border-radius:10px;
 }
 
-/* card design */
 .card{
     min-width:30%;
     background:#fff;
@@ -204,7 +202,6 @@ body{
     transform:translateY(-5px);
 }
 
-/* image */
 .card img{
     width:100px;
     height:100px;
@@ -214,7 +211,6 @@ body{
     padding:10px;
 }
 
-/* content */
 .card h3{
     font-size:16px;
     margin:0;
@@ -224,14 +220,12 @@ body{
     color:#555;
 }
 
-/* price */
 .price{
     font-size:18px;
     font-weight:bold;
     margin:5px 0;
 }
 
-/* button */
 .AddToCart{
     margin-top:8px;
     padding:8px 14px;
@@ -246,18 +240,12 @@ body{
     background:#333;
 }
 
-
-
-
-
 .cart-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 20px;
 }
-
-
 
 .title {
   text-align: center;
