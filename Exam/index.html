@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exam</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h2>Recipe Book</h2>
+        <button id="addBtn">+ New Recipe</button>
+    </header>
+
+    <div class="main">
+
+        <div class="recipe-list">
+            <ul id="recipeList"></ul>
+        </div>
+        <div class="recipe-view">
+            <img id="viewImg" src="img/p.jpg">
+            <div class="detail">
+                <h2 id="viewTitle">PASTA</h2>
+                <p id="viewDesc">With Salad</p>
+                <button id="editBtn">Edit Recipe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <h3 id="modalTitle">Add Recipe</h3>
+
+            <input type="text" id="title" placeholder="Recipe Name">
+            <input type="text" id="desc" placeholder="Description">
+            <input type="text" id="img" placeholder="Image URL">
+
+            <button id="saveBtn">Save</button>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</html>
