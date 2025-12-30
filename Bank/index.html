@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Glass Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+
+</head>
+
+<body style="background: #333;">
+
+    <section class="bank">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 " style="display: flex;">
+
+                    <div class="optionS col-4">
+                        <select name="deposit" id="option">
+                            <option value="" disabled selected>Select Option</option>
+                            <!-- <option value="Deposit">Deposit</option>
+                            <option value="Window">Window</option> -->
+                            <option value="AccountCreate">AccountCreate</option>
+                        </select>
+                    </div>
+                    <div class="optionS2 col-2">
+                        <select name="deposit" id="option2">
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="Deposit">Deposit</option>
+                            <option value="Window">Window</option>
+                        </select>
+                    </div>
+                    <div class="add col-2" style="display: none;">
+                        <input type="number" placeholder="Your Amount Add">
+                        <button class="addMoney">addMoney</button>
+                    </div>
+                    <div class="data col-4" style="display: none;">
+                        <h2 id="WhichType"></h2>
+                        <input type="text" placeholder="Name" id="Name"><br>
+                        <input type="number" placeholder="Account Number" id="AccountNumber"><br>
+                        <input type="number" placeholder="Ammount" id="Ammount"><br>
+                        <button value="button" id="submit">button</button>
+                    </div>
+                   
+                    <div class="dataShow col-4" style="display: none;">
+                        <h2 id="nameShow">Name Show</h2>
+                        <h2 id="AccountNumberShow">Account Number</h2>
+                        <h2 id="AmmountShow">Ammount</h2>
+                    </div>
+                   
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
